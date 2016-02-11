@@ -1,0 +1,21 @@
+= simple_form_for @episode, html: { multipart: true } do |f|
+    - if @episode.errors.any?
+        #errors
+            %h2
+            = pluralize(@episode.errors.count, "error")
+            prevented this episode from saving
+            %ul
+                - @pin.errors.full_messages.each do |msg|
+                    %li= msg
+
+    = f.input :title
+
+    = f.input :description
+
+    = f.input :date
+
+    = f.input :time
+
+    = f.input :next_in_line
+
+= f.button :submit
