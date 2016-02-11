@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.4'
+
 gem 'bulma-rails', '~> 0.0.12'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'haml', '~> 4.0', '>= 4.0.7'
